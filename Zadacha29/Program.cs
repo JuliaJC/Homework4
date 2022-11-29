@@ -15,7 +15,7 @@ void FillArrayRandomNumbers(int[] array, int min, int max)
 {
    for(int i = 0; i < array.Length; i++) 
    {
-    numbers[i] = new Random().Next(min, max);
+    array[i] = new Random().Next(min, max);
    }
 }
 void WriteArray(int[] array)
