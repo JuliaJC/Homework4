@@ -8,13 +8,16 @@ int size = Convert.ToInt32(Console.ReadLine());
 
 int [] numbers = new int [size];
 
-for(int i = 0; i < numbers.Length; i++)
-{
-    numbers[i] = new Random().Next(0, 10);
-}
-
+FillArrayRandomNumbers(numbers, 0, 10);
 WriteArray(numbers);
 
+void FillArrayRandomNumbers(int[] array, int min, int max)
+{
+   for(int i = 0; i < array.Length; i++) 
+   {
+    numbers[i] = new Random().Next(min, max);
+   }
+}
 void WriteArray(int[] array)
 {
     for(int i = 0; i < array.Length; i++)
